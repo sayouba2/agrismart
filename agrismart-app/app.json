@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "AgriSmart",
+    "slug": "agrismart-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0f5132"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.agrismart.app"
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-font",
+      "expo-audio"
+    ]
+  }
+}

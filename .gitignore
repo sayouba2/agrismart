@@ -1,0 +1,32 @@
+# Secrets — ne jamais committer
+.env
+*.env.local
+*.env.development
+*.env.test
+*.env.production
+
+# Dépendances
+node_modules/
+
+# Expo / build
+.expo/
+dist/
+web-build/
+
+# Fichiers générés au runtime par le serveur
+server/history.json
+server/sms-config.json
+
+# Logs & divers
+*.log
+npm-debug.*
+.DS_Store
+*.tgz
+*.zip
+*.bak
+*.tmp
+*.sw?
+
+# IDE
+.idea/
+.vscode/

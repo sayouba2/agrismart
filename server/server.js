@@ -200,8 +200,8 @@ function maybeSendSmsAlert() {
 // Generates realistic values with a small random walk, centered on the healthy
 // range but occasionally drifting out of bounds so alerts + AI can be tested.
 let sim = {
-  temperature: 30, // centre de la plage 28–32 °C
-  humidity: 95, // centre de la plage 90–100 %
+  temperature: 29.5, // centre de la plage 29–30 °C
+  humidity: 80, // centre de la plage 75–85 %
 }
 
 function round1(n) {
@@ -214,8 +214,8 @@ function simulateReading() {
   sim.humidity += (Math.random() - 0.5) * 4 // ±2 %
 
   // Keep values within the desired bands
-  sim.temperature = Math.min(32, Math.max(28, sim.temperature)) // 28–32 °C
-  sim.humidity = Math.min(100, Math.max(90, sim.humidity)) // 90–100 %
+  sim.temperature = Math.min(30, Math.max(29, sim.temperature)) // 29–30 °C
+  sim.humidity = Math.min(85, Math.max(75, sim.humidity)) // 75–85 %
 
   latestData = {
     temperature: round1(sim.temperature),
